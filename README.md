@@ -1,6 +1,6 @@
-# quadratic-equation-solver
+# Simple quadratic equation solver app
 
-python scripts to solve quadratic equation
+python app to solve quadratic equation.
 
 ax^2+bX+c = 0
 
