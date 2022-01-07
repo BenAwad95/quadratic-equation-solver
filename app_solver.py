@@ -36,7 +36,7 @@ def genral_equ(a,b,c):
 	return anaswer
 
 def input_values():
-	print ('Hello, I\'m quadratic equations\' solver\nEnter a,b and c values down below.')
+	print ('\n\nHello, I\'m quadratic equations\' solver\n\nEnter a,b and c values down below.\n ax^2 + bx + c = 0')
 	a = 0
 	while a == 0:
 		a = int(input ('a = '))
