@@ -37,14 +37,20 @@ def genral_equ(a,b,c):
 
 def input_values():
 	print ('\n\nHello, I\'m quadratic equations\' solver\n\nEnter a,b and c values down below.\n ax^2 + bx + c = 0')
-	a = 0
-	while a == 0:
-		a = int(input ('a = '))
-		if a == 0:
-			print ('a Cann\'t be zero\nPlease try again')
+	user_res = 'y'
+	while user_res == 'y':
+		try:
+			a = int(input ('a = '))
+			if a == 0:
+				print ('a Cann\'t be zero\nPlease try again')
+				continue
+			b = int(input ('b = '))
+			c = int(input ('c = '))
+			print (genral_equ(a,b,c))
+			break
+		except ValueError:
+			print("Numbers ONLY please")
 			continue
-		b = int(input ('b = '))
-		c = int(input ('c = '))
-	print (genral_equ(a,b,c))
+			
 
 input_values()
